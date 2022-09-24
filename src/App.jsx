@@ -5,6 +5,7 @@ import { Section } from "./components/Section";
 import { ListItem } from "./components/ListItem";
 
 import twitch from "/twitch.svg"
+import instagram from './assets/instagram.svg'
 
 const gamesListData = [
   {
@@ -105,6 +106,8 @@ const socialListData = [
 
 export function App() {
   console.log(twitch)
+
+
   return (
     
     <div className="App">
@@ -114,6 +117,7 @@ export function App() {
       {/* MAIN component */}
       <main>
       <img src={twitch} alt="" />
+      <img src={instagram} alt="" />
         <Section
           title="Meus Jogos"
           subtitle="Os games que eu mais curto jogar"
