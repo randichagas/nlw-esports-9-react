@@ -4,8 +4,10 @@ import { Header } from "./components/Header";
 import { Section } from "./components/Section";
 import { ListItem } from "./components/ListItem";
 
-import twitch from "/twitch.svg"
+import twitch from "./assets/twitch.svg"
 import instagram from './assets/instagram.svg'
+import twitter from './assets/twitter.svg'
+import youtube from './assets/youtube.svg'
 
 const gamesListData = [
   {
@@ -81,43 +83,35 @@ const channelListData = [
 const socialListData = [
   {
     url: "https://www.twitch.tv/maykbrito",
-    imageUrl: "/twitch.svg",
+    imageUrl: instagram,
     alt: "Logo do Twitch"
   },
   {
     url: "https://www.twitter.com/dgpimenta82",
-    imageUrl: "src/assets/twitter.svg",
+    imageUrl: twitter,
     alt: "Logo do Twitter"
   },
   {
     url: "https://www.instagram.com/dgpimenta82",
-    imageUrl: "src/assets/instagram.svg",
+    imageUrl: instagram,
     alt: "Logo do Instagram"
   },
   {
     url: "https://www.youtube.com",
-    imageUrl: "src/assets/youtube.svg",
+    imageUrl: youtube,
     alt: "Logo do Youtube"
   }
   
 ]; 
 
-
-
 export function App() {
-  console.log(twitch)
-
-
   return (
-    
     <div className="App">
       {/* HEADER component */}
       <Header />
       
       {/* MAIN component */}
       <main>
-      <img src={twitch} alt="" />
-      <img src={instagram} alt="" />
         <Section
           title="Meus Jogos"
           subtitle="Os games que eu mais curto jogar"
